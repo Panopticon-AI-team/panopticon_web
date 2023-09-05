@@ -7,10 +7,13 @@
         font-size: 14px;
         /* Example: reduce padding */
         max-width: 70%;
+
         /* or whatever value you deem fit, e.g. 300px */
         margin: auto;
         /* This will ensure that it stays centered with the given max-width */
     }
+
+    .canvas
 }
 
 body,
@@ -39,6 +42,9 @@ html {
 canvas {
     display: block;
     position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
     top: 0;
     left: 0;
 }
