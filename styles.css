@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+
+
 body,
 html {
     margin: 0;
@@ -16,6 +19,31 @@ canvas {
     left: 0;
 }
 
+.description_link {
+    font-size: 16px;
+    font-family: 'Quantico', sans-serif;
+    padding-top: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+    font-family: 'Quantico', sans-serif;
+    padding-top: 10px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.tagline {
+    font-size: 20px;
+    font-family: 'Quantico', sans-serif;
+    padding-top: 10px;
+    max-width: 400px;
+    text-align: left;
+    text-align: center;
+}
+
 .glowing-textbox {
     position: absolute;
     top: 40%;
@@ -23,17 +51,17 @@ canvas {
     transform: translate(-50%, -50%);
     padding: 20px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     /* Semi-transparent black */
     color: rgb(27, 27, 27);
-    font-size: 20px;
     border-radius: 4px;
     box-shadow: 0 0 10px #c4c1bc, 0 0 30px #c4c1bc;
     /* Green glow */
     transition: box-shadow 0.3s ease;
     z-index: 10;
 }
+
 
 .glowing-textbox:hover {
     box-shadow: 0 0 20px #c4c1bc, 0 0 40px #c4c1bc;
