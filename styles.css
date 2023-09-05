@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
 
+@media only screen and (max-width: 768px) {
+
+    /* Adjust styles for mobile here */
+    .glowing-textbox {
+        font-size: 14px;
+        /* Example: reduce font size */
+        padding: 10px;
+        /* Example: reduce padding */
+    }
+}
 
 body,
 html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
     background-color: #222;
     font-family: Arial, sans-serif;
 
 }
+
+
 
 canvas {
     display: block;
