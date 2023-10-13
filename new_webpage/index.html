@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css" />
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+
 </head>
 
 <body>
@@ -48,9 +49,11 @@
         </div>
       </div>
     </nav>
+
   </div>
 
   <section class="section" id="carousel-section">
+    <canvas id="canvas" style="position: absolute; top: 0; left: 0; z-index: 1;"></canvas>
     <div class="container">
       <div id="carousel-demo" class="carousel pb-6" style="overflow: hidden">
         <div class="item-1">
@@ -351,3 +354,5 @@
 
 
 </script>
+
+<script src="script.js"></script>

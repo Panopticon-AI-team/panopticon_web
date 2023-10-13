@@ -3,6 +3,7 @@
   font-size: large !important;
 }
 
+
 .navbar-item:hover {
   background-color: white !important;
   color: black !important;
@@ -24,10 +25,27 @@
   background-color: #1f1f2e !important;
   color: white;
   font-family: "Avenir";
-  scroll-margin-top: 20px;
+  scroll-margin-top: 40px;
+}
+
+#services-section {
+  scroll-margin-top: 100px;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#carousel-section>.container {
+  position: relative;
+  z-index: 3;
 }
 
 #carousel-section {
+  position: relative;
   background-color: #1f1f2e !important;
   padding: 50px 0;
   margin-bottom: 50px;
