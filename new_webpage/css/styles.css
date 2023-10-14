@@ -24,12 +24,17 @@
 #team {
   background-color: #1f1f2e !important;
   color: white;
-  font-family: "Avenir";
   scroll-margin-top: 40px;
 }
 
 #services-section {
   scroll-margin-top: 100px;
+}
+
+p,
+title,
+div {
+  font-family: "IBM Plex Sans";
 }
 
 #canvas {
@@ -59,7 +64,7 @@
 }
 
 #card-product-description {
-  color: red;
+  color: rgb(0, 0, 0);
 }
 
 #fresh-fruits-section {
@@ -67,7 +72,7 @@
 }
 
 #tasty-fruits-section {
-  background-image: url(https://technext.github.io/tropika/images/tasty-image.png);
+  background-image: url(../images/reinforcementlearning.png);
   background-repeat: no-repeat;
   height: 400px;
   align-items: center;
@@ -77,9 +82,16 @@
   margin-bottom: 100px;
 }
 
+
+
+.footer-secondary {
+  color: white;
+  background-color: #1f1f2e;
+}
+
 .card:hover {
   transform: scale(1.02);
-  border-top: 5px solid #fc5d35;
+  border-top: 5px solid #9f1616;
 }
 
 .is-white-text-title {
