@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bulma Tropico 🍍</title>
+  <title>Panopticon AI</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
@@ -31,7 +31,6 @@
         </a>
       </div>
 
-
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start"></div>
 
@@ -42,7 +41,7 @@
             <a class="navbar-item scroll-link" href="#team"> Team</a>
             <a class="navbar-item scroll-link" href="#contact"> Contact Us</a>
             <div class="buttons">
-              <a class="button is-primary is-orange">
+              <a class="button is-primary is-red">
                 <strong>Get a quote</strong>
               </a>
             </div>
@@ -71,12 +70,17 @@
               <br />
 
               <div class="buttons is-left">
-                <button class="button is-medium is-black is-primary is-light">CONTACT US</button>
+                <a href="#contact">
+                  <button class="button is-medium is-red is-primary is-light">CONTACT US</button>
+                </a>
               </div>
             </div>
             <div class="column is-half is-pulled-right">
               <figure class="image is is-covered">
-                <img src="images/pacifictheater.jpg" alt="" />
+                <a
+                  href="https://www.armyupress.army.mil/portals/7/military-review/img/English/ND-20/Ferguson-Human-Machine-Paradox-img1.jpg">
+                  <img src="images/Marines-Cover2.jpg" alt="" />
+                </a>
               </figure>
             </div>
           </div>
@@ -91,7 +95,6 @@
       <div class="columns is-centered " id="services-text-container">
         <div class="column is-4 has-text-centered">
           <h1 class="title is-1">Services</h1>
-          <br>
           We provide AI Agents that can plug into your simulation platforms so that military servicemembers can train
           against red force behavior. Our reinforcement learning methods are based off of cutting edge AI research.
         </div>
@@ -104,7 +107,7 @@
               <div class="has-text-centered">
                 <img src="images/afsim.jpeg" />
               </div>
-              <h3 class="title is-3 has-text-centered mt-1" id="card-product-description">AFSIM</h3>
+              <h3 class="subtitle is-3 has-text-centered mt-1" id="card-product-description">AFSIM</h3>
               <p class="has-text-centered">
                 Simulate realistic red forces in AFSIM for modeling and simulation analyses.
               </p>
@@ -115,13 +118,11 @@
           <div class="card">
             <div class="card-content">
               <div class="has-text-centered">
-                <img src="images/card-item-1.png" />
+                <img src="images/wargames2.jpg" />
               </div>
-              <h3 class="title is-3 has-text-centered" id="card-product-description">Command: Modern Operations</h3>
+              <h3 class="subtitle is-3 has-text-centered" id="card-product-description">Game Name</h3>
               <p class="has-text-centered">
-                There are many variations of passages of Lorem Ipsum available, but the majority
-                have suffered alteration in some form, by injected humour, or randomised words
-                which don't look even slightly believable.
+                We have to make sure there is some sort of usable screenshot here
               </p>
             </div>
           </div>
@@ -132,7 +133,7 @@
               <div class="has-text-centered">
                 <img src="images/wargames.jpg" />
               </div>
-              <h3 class="title is-3 has-text-centered" id="card-product-description">Customized services</h3>
+              <h3 class="subtitle is-3 has-text-centered" id="card-product-description">Customized services</h3>
               <p class="has-text-centered">
                 We provide realistic model-building to control units in any military exercise platform.
               </p>
@@ -153,9 +154,10 @@
           <h3 class="title is-3">Reinforcement Learning</h3>
 
           <p class="hast-text-centered is-1">
-            but the majority have suffered alteration in some form, by injected humour, or
-            randomised words which don't look even slightly believable. If you are going to use a
-            passage of Lorem Ipsum, you need to be
+            Inspired by the blah blah blah, this is something that is going to use reinforcement learning.
+            Also reinforcement learning looks like the OODA Loop. Also there is a lot of research that is going into
+            this.
+            List out some of the minor technical terms that power this, but not in too much detail.
           </p>
           <br />
         </div>
@@ -202,7 +204,7 @@
       <div class="columns is-centered">
         <div class="column is-4">
           <h2 class="title">Contact Us</h2>
-          <form>
+          <form action="mailto:luke@panopticon-ai.com" method="post" enctype="text/plain">
             <div class="field">
               <input class="input is-custom-field" type="text" placeholder="Name" />
             </div>
@@ -214,7 +216,12 @@
                 <textarea class="textarea" placeholder="Message"></textarea>
               </div>
             </div>
+            <div class="field">
+              <button type="submit" class="button is-red">Submit</button>
+            </div>
           </form>
+          <br>
+
         </div>
         <div class="column is-2"> </div>
         <div class="column is-4">
@@ -224,7 +231,7 @@
               <input class="input" size="5" type="text" placeholder="Email" />
             </div>
             <div class="buttons">
-              <button class="button is-left is-medium is-orange">Subscribe</button>
+              <button class="button is-left is-medium is-red">Subscribe</button>
             </div>
           </div>
 
@@ -247,7 +254,6 @@
         </div>
       </div>
     </div>
-
   </section>
   <section class="section">
     <div class="container">

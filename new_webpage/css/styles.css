@@ -89,9 +89,17 @@ div {
   background-color: #1f1f2e;
 }
 
+.card {
+  height: 400px;
+}
+
 .card:hover {
   transform: scale(1.02);
   border-top: 5px solid #9f1616;
+}
+
+.title {
+  padding-bottom: 20px;
 }
 
 .is-white-text-title {
@@ -157,19 +165,14 @@ textarea {
   color: white !important;
 }
 
-.button.is-orange {
+.button.is-red {
   background-color: #9f1616 !important;
   color: white !important;
 }
 
-.button.is-orange:hover {
+.button.is-red:hover {
   background-color: white !important;
   color: #fc5d35 !important;
-}
-
-.button.is-black:hover {
-  background-color: white !important;
-  color: black !important;
 }
 
 .is-black-social {
