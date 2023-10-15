@@ -168,6 +168,7 @@ textarea {
 .button.is-red {
   background-color: #9f1616 !important;
   color: white !important;
+  font-family: "IBM Plex Sans";
 }
 
 .button.is-red:hover {
