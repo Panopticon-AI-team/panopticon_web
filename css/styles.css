@@ -13,23 +13,7 @@
   border-bottom: 1px solid #dcdcdc
 }
 
-.title.team-text {
-  color: #f4f4f4;
-}
 
-.subtitle.team-text {
-  color: #f4f4f4;
-}
-
-#team {
-  background-color: #1f1f2e !important;
-  color: white;
-  scroll-margin-top: 40px;
-}
-
-#services-section {
-  scroll-margin-top: 100px;
-}
 
 p,
 title,
@@ -37,11 +21,20 @@ div {
   font-family: "IBM Plex Sans";
 }
 
+p {
+  font-size: large;
+}
+
 #canvas {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+#carousel-demo {
+  margin-top: 50px;
+  color: white
 }
 
 #carousel-section>.container {
@@ -55,42 +48,34 @@ div {
   padding: 50px 0;
   margin-bottom: 50px;
   font-family: "Avenir";
-  font-size: larger;
+  font-size: x-large;
 }
 
-#carousel-demo {
-  margin-top: 50px;
-  color: white
+.section {
+  padding: 2rem
 }
-
-#card-product-description {
-  color: rgb(0, 0, 0);
-}
-
-#fresh-fruits-section {
-  margin-top: 50px;
-}
-
-#tasty-fruits-section {
-  background-image: url(../images/reinforcementlearning.png);
-  background-repeat: no-repeat;
-  height: 400px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-
 
 .footer-secondary {
   color: white;
   background-color: #1f1f2e;
 }
 
-.card {
-  height: 400px;
+.equal-height-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.equal-height-card {
+  flex-grow: 1;
+}
+
+.card-content {
+  padding-top: 0;
+}
+
+.card-img {
+  padding: 20px; /* Adjust as needed */
 }
 
 .card:hover {
@@ -112,42 +97,31 @@ div {
   height: 256px !important;
 }
 
-#contact-section {
-  background-image: url(https://technext.github.io/tropika//images/orange-dish.png);
-  background-repeat: no-repeat;
-  height: 500px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  background-position: right center;
-  overflow: hidden;
+.title.team-text {
+  color: #f4f4f4;
 }
 
-input.is-custom-field {
-  border-bottom: 0.8px solid #252525 !important;
-  outline: none;
-  border: none;
-  box-shadow: none !important;
-  /* width: 90% !important; */
-  border-radius: unset;
+.title {
+  margin-bottom: 0;
 }
 
-textarea {
-  border-bottom: 0.8px solid #252525 !important;
-  outline: none !important;
-  border: none;
-  box-shadow: none !important;
-  border-radius: unset;
-  border-color: none !important;
-  outline-color: none !important;
+.subtitle.team-text {
+  color: #f4f4f4;
 }
 
-#map {
-  width: 100% !important;
-  height: 400px;
-  margin-bottom: 50px;
+.img-with-border {
+  border: 6px solid #000000;
+  margin: 0;
+}
+
+#team-section {
+  background-color: #1f1f2e !important;
+  color: white;
+  scroll-margin-top: 40px;
+}
+
+#applications-section, #technical-section {
+  scroll-margin-top: 100px;
 }
 
 .footer-main {

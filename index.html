@@ -37,12 +37,12 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <a class="navbar-item scroll-link" href="#navbar-container"> Home</a>
-            <a class="navbar-item scroll-link" href="#services-section"> Services</a>
-            <a class="navbar-item scroll-link" href="#team"> Team</a>
-            <a class="navbar-item scroll-link" href="#contact"> Contact Us</a>
+            <a class="navbar-item scroll-link" href="#applications-section"> Applications</a>
+            <a class="navbar-item scroll-link" href="#technical-section"> Technology</a>
+            <a class="navbar-item scroll-link" href="#team-section"> Team</a>
             <div class="buttons">
               <a class="button is-primary is-red" href="#contact">
-                <strong>Get a quote</strong>
+                <strong>Follow us</strong>
               </a>
             </div>
           </div>
@@ -55,31 +55,30 @@
   <section class="section" id="carousel-section">
     <canvas id="canvas" style="position: absolute; top: 0; left: 0; z-index: 1;"></canvas>
     <div class="container">
-      <div id="carousel-demo" class="carousel pb-6" style="overflow: hidden">
+      <div id="carousel-demo" class="carousel pb-5" style="overflow: hidden">
         <div class="item-1">
           <div class="columns">
-            <div class="column is-variable mr-6">
+            <div class="column pr-4 mr-4">
               <h2 class="title is-1 has-text-white-ter">
                 <img src="images/title-logo-white.png">
               </h2>
               <p>
-                Our software enables every member of the military to simulate realistic military scenarios.
-                Using machine learning techniques, we create the most realistic red force agents available at the
-                unclassified level
+                Panopticon AI is revolutionizing the art of war. Using machine learning,
+                we're creating an A.I. agent that no human can beat in simulated wargames.
               </p>
               <br />
 
               <div class="buttons is-left">
                 <a href="#contact">
-                  <button class="button is-medium is-red is-primary is-light">CONTACT US</button>
+                  <button class="button is-medium is-red is-primary is-light">Follow us</button>
                 </a>
               </div>
             </div>
             <div class="column is-half is-pulled-right">
-              <figure class="image is is-covered">
+              <figure class="image is-covered">
                 <a
                   href="https://www.armyupress.army.mil/portals/7/military-review/img/English/ND-20/Ferguson-Human-Machine-Paradox-img1.jpg">
-                  <img src="images/Marines-Cover2.jpg" alt="" />
+                  <img src="images/Marines-Cover2.jpg" alt="" class="img-with-border" />
                 </a>
               </figure>
             </div>
@@ -91,51 +90,56 @@
   </section>
 
   <section class="section">
-    <div class="container" id="services-section">
-      <div class="columns is-centered " id="services-text-container">
-        <div class="column is-4 has-text-centered">
-          <h1 class="title is-1">Services</h1>
-          We provide AI Agents that can plug into your simulation platforms so that military servicemembers can train
-          against red force behavior. Our reinforcement learning methods are based off of cutting edge AI research.
-        </div>
+    <div class="container" id="applications-section">
+      <div class="columns is-centered " id="applications-text-container">
+        <h1 class="title is-1">Applications</h1>
       </div>
-      <br />
       <div class="columns">
         <div class="column">
-          <div class="card">
+          <div class="card equal-height-card">
+            <div class="has-text-centered card-img">
+              <img src="images/afsim.jpeg" />
+            </div>
             <div class="card-content">
-              <div class="has-text-centered">
-                <img src="images/afsim.jpeg" />
-              </div>
-              <h3 class="subtitle is-3 has-text-centered mt-1" id="card-product-description">AFSIM</h3>
+              <h3 class="subtitle is-3 has-text-centered mt-1">Realistic Exercise
+                Simulations
+              </h3>
               <p class="has-text-centered">
-                Simulate realistic red forces in AFSIM for modeling and simulation analyses.
+                Simulate the most realistic red and blue forces available at the unclassified level. Easily integrate
+                our reinforcement learning agents into your custom platform, so that you can train in realistic
+                scenarios any time using a fraction of the manpower.
               </p>
             </div>
           </div>
         </div>
         <div class="column">
-          <div class="card">
+          <div class="card equal-height-card">
+
+            <div class="has-text-centered card-img">
+              <img src="images/wargames2.jpg" />
+            </div>
             <div class="card-content">
-              <div class="has-text-centered">
-                <img src="images/wargames2.jpg" />
-              </div>
-              <h3 class="subtitle is-3 has-text-centered" id="card-product-description">Game Name</h3>
+              <h3 class="subtitle is-3 has-text-centered">Dominate Joint Operations</h3>
               <p class="has-text-centered">
-                We have to make sure there is some sort of usable screenshot here
-              </p>
+                Our vision is to enable human-machine teaming between military commanders and AI, rewriting
+                military doctrine as we know it. Once matured, our models will be able to defeat any military strategist
+                in simulated wargames. </p>
             </div>
           </div>
         </div>
         <div class="column">
-          <div class="card">
+          <div class="card equal-height-card">
+
+            <div class="has-text-centered card-img">
+              <img src="images/wargames.jpg" />
+            </div>
             <div class="card-content">
-              <div class="has-text-centered">
-                <img src="images/wargames.jpg" />
-              </div>
-              <h3 class="subtitle is-3 has-text-centered" id="card-product-description">Customized services</h3>
+              <h3 class="subtitle is-3 has-text-centered">Modeling & Simulation Analysis
+              </h3>
               <p class="has-text-centered">
-                We provide realistic model-building to control units in any military exercise platform.
+                Put the power of simulation in the hands of every warfighter to analyze wars before they happen. Build
+                complex Modeling & Simulation scenarios as seamlessly
+                as playing a video game.
               </p>
             </div>
           </div>
@@ -145,19 +149,21 @@
   </section>
 
   <section class="section">
-    <div class="container">
+    <div class="container" id="technical-section">
       <div class="has-text-centered pb-6">
-        <h1 class="title is-1">Complete the OODA loop with Panopticon AI</h1>
+        <h1 class="title is-1">Complete the OODA loop</h1>
       </div>
       <div class="columns">
         <div class="column is-half is-flex is-justify-content-center is-flex-direction-column">
           <h3 class="title is-3">Reinforcement Learning</h3>
 
-          <p class="hast-text-centered is-1">
-            Inspired by the blah blah blah, this is something that is going to use reinforcement learning.
-            Also reinforcement learning looks like the OODA Loop. Also there is a lot of research that is going into
-            this.
-            List out some of the minor technical terms that power this, but not in too much detail.
+          <p class="is-2 technical-description">
+            Panopticon AI is still under development. Inspired by the technologies behind AlphaStar and OpenAI, our
+            system will utilize state-of-the-art
+            reinforcement learning algorithms for wargaming simulations. Rather than simply analyzing data to provide
+            analysis and summarization, our software will decide and act intelligently in a simulated environment. We
+            hope to close the OODA loop like no other technology has done
+            before.
           </p>
           <br />
         </div>
@@ -169,7 +175,9 @@
       </div>
     </div>
   </section>
-  <section class="section" id="team">
+
+
+  <section class="section" id="team-section">
     <div class="has-text-centered">
       <h1 class="title is-1 team-text">Team</h1>
     </div>
@@ -177,20 +185,21 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-3">
           <figure class="image is-256x256 is-inline-block">
-            <img src="images/lukechen.jpg" />
+            <img src="images/lukechen.jpg" class="img-with-border" />
           </figure>
-          <h3 class="title  team-text">Luke Chen</h3>
+
+          <h3 class="title is-marginless team-text">Luke Chen</h3>
           <p>
-            Luke Chen is an Air Force veteran with experience in intelligence analysis. He also worked in data science
-            at JP Morgan Chase.
+            Luke Chen is an Air Force veteran with experience in intelligence analysis and operations, as well as
+            experience in data science at JP Morgan Chase.
           </p>
         </div>
         <div class="column is-1"> </div>
         <div class="column is-3">
           <figure class="image is-256x256 is-inline-block">
-            <img src="images/minhhua.jpg" />
+            <img src="images/minhhua.jpg" class="img-with-border" />
           </figure>
-          <h3 class="title  team-text">Minh Hua</h3>
+          <h3 class="title is-marginless team-text">Minh Hua</h3>
           <p>
             Minh Hua holds a MS in computer science from Johns Hopkins, and currently works on modeling and simulation
             in the Air Force as a civilian.
@@ -206,37 +215,6 @@
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdwV0g4eFeFOZeTsmEwjppwnWiRTJaDpmaH7-ZyWbUkuu5F8g/viewform?embedded=true"
             width="640" height="610" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-          <!--
-            <form action="mailto:luke@panopticon-ai.com" method="post" enctype="text/plain">
-            <div class="field">
-              <input class="input is-custom-field" type="text" placeholder="Name" />
-            </div>
-            <div class="field">
-              <input class="input is-custom-field" type="text" placeholder="Email" />
-            </div>
-            <div class="field">
-              <div class="control">
-                <textarea class="textarea" placeholder="Message"></textarea>
-              </div>
-            </div>
-            <div class="field">
-              <button type="submit" class="button is-red">Submit</button>
-            </div>
-           </form>
-
-
-                     <div class="subscription-form">
-            <h4 class="title">Subscribe Now</h4>
-            <div class="field">
-              <input class="input" size="5" type="text" placeholder="Email" />
-            </div>
-            <div class="buttons">
-              <button class="button is-left is-medium is-red">Subscribe</button>
-            </div>
-          </div>
-
-          -->
           <br>
 
         </div>
