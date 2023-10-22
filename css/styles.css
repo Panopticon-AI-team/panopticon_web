@@ -1,0 +1,194 @@
+.navbar-item {
+  padding-right: 40px !important;
+  font-size: large !important;
+}
+
+
+.navbar-item:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.navbar {
+  border-bottom: 1px solid #dcdcdc
+}
+
+.title.team-text {
+  color: #f4f4f4;
+}
+
+.subtitle.team-text {
+  color: #f4f4f4;
+}
+
+#team {
+  background-color: #1f1f2e !important;
+  color: white;
+  scroll-margin-top: 40px;
+}
+
+#services-section {
+  scroll-margin-top: 100px;
+}
+
+p,
+title,
+div {
+  font-family: "IBM Plex Sans";
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#carousel-section>.container {
+  position: relative;
+  z-index: 3;
+}
+
+#carousel-section {
+  position: relative;
+  background-color: #1f1f2e !important;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  font-family: "Avenir";
+  font-size: larger;
+}
+
+#carousel-demo {
+  margin-top: 50px;
+  color: white
+}
+
+#card-product-description {
+  color: rgb(0, 0, 0);
+}
+
+#fresh-fruits-section {
+  margin-top: 50px;
+}
+
+#tasty-fruits-section {
+  background-image: url(../images/reinforcementlearning.png);
+  background-repeat: no-repeat;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+
+
+.footer-secondary {
+  color: white;
+  background-color: #1f1f2e;
+}
+
+.card {
+  height: 400px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border-top: 5px solid #9f1616;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.is-white-text-title {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.is-256x256 {
+  width: 256px !important;
+  height: 256px !important;
+}
+
+#contact-section {
+  background-image: url(https://technext.github.io/tropika//images/orange-dish.png);
+  background-repeat: no-repeat;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-position: right center;
+  overflow: hidden;
+}
+
+input.is-custom-field {
+  border-bottom: 0.8px solid #252525 !important;
+  outline: none;
+  border: none;
+  box-shadow: none !important;
+  /* width: 90% !important; */
+  border-radius: unset;
+}
+
+textarea {
+  border-bottom: 0.8px solid #252525 !important;
+  outline: none !important;
+  border: none;
+  box-shadow: none !important;
+  border-radius: unset;
+  border-color: none !important;
+  outline-color: none !important;
+}
+
+#map {
+  width: 100% !important;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.footer-main {
+  background-color: white !important;
+  padding: 0 !important;
+}
+
+.footer-secondary {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.button.is-black {
+  background-color: black !important;
+  color: white !important;
+}
+
+.button.is-red {
+  background-color: #9f1616 !important;
+  color: white !important;
+  font-family: "IBM Plex Sans";
+}
+
+.button.is-red:hover {
+  background-color: white !important;
+  color: #fc5d35 !important;
+}
+
+.is-black-social {
+  color: black !important;
+}
+
+.is-black-social:hover {
+  background-color: white !important;
+  color: #fc5d35 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}

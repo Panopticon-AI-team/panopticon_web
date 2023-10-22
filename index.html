@@ -1,42 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Panopticon AI</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quantico">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panopticon AI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css" />
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Nunito' rel="stylesheet">
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans' rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 
 </head>
 
 <body>
-    <div class="glowing-textbox">
+  <div class="container" id="navbar-container">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item center" href="https://bulma.io" style="margin-left: 50px;">
+          <!-- Adjust the margin here -->
+          <img src="images/title-logo.png" height="100" class="is-inline-block" />
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-        <br>
-        <img src="./logo2.png" alt="Description of Image" class="centered-image">
-        <br>
-        <br>
-        <div class="tagline">
-            Revolutionizing the Art of War
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start"></div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="navbar-item scroll-link" href="#navbar-container"> Home</a>
+            <a class="navbar-item scroll-link" href="#services-section"> Services</a>
+            <a class="navbar-item scroll-link" href="#team"> Team</a>
+            <a class="navbar-item scroll-link" href="#contact"> Contact Us</a>
+            <div class="buttons">
+              <a class="button is-primary is-red" href="#contact">
+                <strong>Get a quote</strong>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="description">
-            Our software enables every member of the military
-            to simulate realistic military scenarios.
-            Using machine learning techniques, we
-            create the most realistic red force agents
-            available at the unclassified level
+      </div>
+    </nav>
+
+  </div>
+
+  <section class="section" id="carousel-section">
+    <canvas id="canvas" style="position: absolute; top: 0; left: 0; z-index: 1;"></canvas>
+    <div class="container">
+      <div id="carousel-demo" class="carousel pb-6" style="overflow: hidden">
+        <div class="item-1">
+          <div class="columns">
+            <div class="column is-variable mr-6">
+              <h2 class="title is-1 has-text-white-ter">
+                <img src="images/title-logo-white.png">
+              </h2>
+              <p>
+                Our software enables every member of the military to simulate realistic military scenarios.
+                Using machine learning techniques, we create the most realistic red force agents available at the
+                unclassified level
+              </p>
+              <br />
+
+              <div class="buttons is-left">
+                <a href="#contact">
+                  <button class="button is-medium is-red is-primary is-light">CONTACT US</button>
+                </a>
+              </div>
+            </div>
+            <div class="column is-half is-pulled-right">
+              <figure class="image is is-covered">
+                <a
+                  href="https://www.armyupress.army.mil/portals/7/military-review/img/English/ND-20/Ferguson-Human-Machine-Paradox-img1.jpg">
+                  <img src="images/Marines-Cover2.jpg" alt="" />
+                </a>
+              </figure>
+            </div>
+          </div>
         </div>
-        <div class="description_link">
-            <a href=https://forms.gle/c6Kozk9xtP5o5pU39>WOULD YOU LIKE TO KNOW MORE?</a>
-        </div>
+      </div>
+      <!-- End Carousel -->
     </div>
+  </section>
 
-    <canvas id="fogCanvas"></canvas>
+  <section class="section">
+    <div class="container" id="services-section">
+      <div class="columns is-centered " id="services-text-container">
+        <div class="column is-4 has-text-centered">
+          <h1 class="title is-1">Services</h1>
+          We provide AI Agents that can plug into your simulation platforms so that military servicemembers can train
+          against red force behavior. Our reinforcement learning methods are based off of cutting edge AI research.
+        </div>
+      </div>
+      <br />
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="has-text-centered">
+                <img src="images/afsim.jpeg" />
+              </div>
+              <h3 class="subtitle is-3 has-text-centered mt-1" id="card-product-description">AFSIM</h3>
+              <p class="has-text-centered">
+                Simulate realistic red forces in AFSIM for modeling and simulation analyses.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="has-text-centered">
+                <img src="images/wargames2.jpg" />
+              </div>
+              <h3 class="subtitle is-3 has-text-centered" id="card-product-description">Game Name</h3>
+              <p class="has-text-centered">
+                We have to make sure there is some sort of usable screenshot here
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="has-text-centered">
+                <img src="images/wargames.jpg" />
+              </div>
+              <h3 class="subtitle is-3 has-text-centered" id="card-product-description">Customized services</h3>
+              <p class="has-text-centered">
+                We provide realistic model-building to control units in any military exercise platform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section class="section">
+    <div class="container">
+      <div class="has-text-centered pb-6">
+        <h1 class="title is-1">Complete the OODA loop with Panopticon AI</h1>
+      </div>
+      <div class="columns">
+        <div class="column is-half is-flex is-justify-content-center is-flex-direction-column">
+          <h3 class="title is-3">Reinforcement Learning</h3>
+
+          <p class="hast-text-centered is-1">
+            Inspired by the blah blah blah, this is something that is going to use reinforcement learning.
+            Also reinforcement learning looks like the OODA Loop. Also there is a lot of research that is going into
+            this.
+            List out some of the minor technical terms that power this, but not in too much detail.
+          </p>
+          <br />
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="images/reinforcementlearning.png" />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="team">
+    <div class="has-text-centered">
+      <h1 class="title is-1 team-text">Team</h1>
+    </div>
+    <div class="container mt-6">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-3">
+          <figure class="image is-256x256 is-inline-block">
+            <img src="images/lukechen.jpg" />
+          </figure>
+          <h3 class="title  team-text">Luke Chen</h3>
+          <p>
+            Luke Chen is an Air Force veteran with experience in intelligence analysis. He also worked in data science
+            at JP Morgan Chase.
+          </p>
+        </div>
+        <div class="column is-1"> </div>
+        <div class="column is-3">
+          <figure class="image is-256x256 is-inline-block">
+            <img src="images/minhhua.jpg" />
+          </figure>
+          <h3 class="title  team-text">Minh Hua</h3>
+          <p>
+            Minh Hua holds a MS in computer science from Johns Hopkins, and currently works on modeling and simulation
+            in the Air Force as a civilian.
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <section class="section  is-centered" id="contact">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-4">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdwV0g4eFeFOZeTsmEwjppwnWiRTJaDpmaH7-ZyWbUkuu5F8g/viewform?embedded=true"
+            width="640" height="610" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+          <!--
+            <form action="mailto:luke@panopticon-ai.com" method="post" enctype="text/plain">
+            <div class="field">
+              <input class="input is-custom-field" type="text" placeholder="Name" />
+            </div>
+            <div class="field">
+              <input class="input is-custom-field" type="text" placeholder="Email" />
+            </div>
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <button type="submit" class="button is-red">Submit</button>
+            </div>
+           </form>
+
+
+                     <div class="subscription-form">
+            <h4 class="title">Subscribe Now</h4>
+            <div class="field">
+              <input class="input" size="5" type="text" placeholder="Email" />
+            </div>
+            <div class="buttons">
+              <button class="button is-left is-medium is-red">Subscribe</button>
+            </div>
+          </div>
+
+          -->
+          <br>
+
+        </div>
+        <div class="column is-2"> </div>
+        <div class="column is-4">
+
+          <hr style="border: 0; border-top: 1px solid #1f1f2e; height: 0;">
+          <h4 class="title">Follow Us</h4>
+
+          <div class="buttons">
+            <a class="button is-medium is-linkedin is-inverted is-black-social">
+              <span class="icon">
+                <i class="fab fa-linkedin fa-lg"></i>
+              </span>
+            </a>
+            <a class="button is-medium is-instagram is-inverted is-black-social">
+              <span class="icon">
+                <i class="fab fa-instagram fa-lg"></i>
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-secondary">
+    <div class="content has-text-centered">
+      <p>
+        The appearance of U.S. Department of Defense (DoD) visual information does not imply or constitute DoD
+        endorsement.
+
+        <!--
+            Copyright © 2021 Tropico Template ♥ by
+            <a href="https://github.com/restylianos">restylianos</a>
+          -->
+
+      </p>
+    </div>
+  </footer>
 
 </body>
 
 </html>
+
+<script>
+  bulmaCarousel.attach('#carousel-demo', {
+    initialSlide: 0,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+  });
+</script>
+
+<script src="script.js"></script>
