@@ -52,12 +52,11 @@ p {
 #main-section {
   position: relative;
   background-color: #1f1f2e !important;
-  padding: 50px 0;
-  margin-bottom: 50px;
   font-family: "Avenir";
   font-size: x-large;
   margin-top: 50px;
-  color: white
+  color: white;
+  overflow: hidden;
 }
 
 .section {
@@ -133,10 +132,22 @@ p {
   scroll-margin-top: 40px;
 }
 
-#applications-section, #technical-section {
-  scroll-margin-top: 100px;
+#contact-section {
+  scroll-margin-top: 40px;
 }
 
+#applications-section, #technical-section {
+  scroll-margin-top: 80px;
+}
+
+.scroll-offset::before {
+  display: block;
+  content: " ";
+  height: 60px; /* height of your navbar */
+  margin: -60px 0 0; /* negative value of your navbar height */
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .footer-main {
   background-color: white !important;

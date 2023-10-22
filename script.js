@@ -41,7 +41,7 @@ class Line {
         ctx.beginPath();
         ctx.moveTo(this.x, this.y);
         ctx.lineTo(this.x + Math.cos(this.angle) * this.length, this.y + Math.sin(this.angle) * this.length);
-        ctx.strokeStyle = `rgba(70, 80, 110, ${this.opacity * .7})`; // Use the opacity value
+        ctx.strokeStyle = `rgba(65, 75, 105, ${this.opacity * .72})`; // Use the opacity value
         ctx.lineWidth = 1;
         ctx.stroke();
     }
