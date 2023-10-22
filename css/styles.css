@@ -32,23 +32,32 @@ p {
   z-index: 1;
 }
 
-#carousel-demo {
-  margin-top: 50px;
-  color: white
-}
-
-#carousel-section>.container {
+#main-section>.container {
   position: relative;
   z-index: 3;
 }
 
-#carousel-section {
+.px-3-mobile {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media screen and (min-width: 769px) {  /* This corresponds to Bulma's tablet breakpoint */
+  .px-3-mobile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#main-section {
   position: relative;
   background-color: #1f1f2e !important;
   padding: 50px 0;
   margin-bottom: 50px;
   font-family: "Avenir";
   font-size: x-large;
+  margin-top: 50px;
+  color: white
 }
 
 .section {
@@ -114,6 +123,10 @@ p {
   margin: 0;
 }
 
+.marines-img {
+  margin-bottom: 20px;
+}
+
 #team-section {
   background-color: #1f1f2e !important;
   color: white;
@@ -124,6 +137,7 @@ p {
   scroll-margin-top: 100px;
 }
 
+
 .footer-main {
   background-color: white !important;
   padding: 0 !important;
@@ -132,6 +146,10 @@ p {
 .footer-secondary {
   padding: 20px;
   margin-top: 20px;
+}
+
+.buttons {
+  font-family: "IBM Plex Sans";
 }
 
 .button.is-black {

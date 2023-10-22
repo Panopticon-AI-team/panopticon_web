@@ -20,7 +20,7 @@
   <div class="container" id="navbar-container">
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item center" href="https://bulma.io" style="margin-left: 50px;">
+        <a class="navbar-item center" href="https://panopticon-ai.com" style="margin-left: 50px;">
           <!-- Adjust the margin here -->
           <img src="images/title-logo.png" height="100" class="is-inline-block" />
         </a>
@@ -36,12 +36,12 @@
 
         <div class="navbar-end">
           <div class="navbar-item">
-            <a class="navbar-item scroll-link" href="#navbar-container"> Home</a>
+            <a class="navbar-item scroll-link" href="#placeholder"> Home</a>
             <a class="navbar-item scroll-link" href="#applications-section"> Applications</a>
             <a class="navbar-item scroll-link" href="#technical-section"> Technology</a>
             <a class="navbar-item scroll-link" href="#team-section"> Team</a>
             <div class="buttons">
-              <a class="button is-primary is-red" href="#contact">
+              <a class="button is-primary is-red" href="#contact-section">
                 <strong>Follow us</strong>
               </a>
             </div>
@@ -51,47 +51,41 @@
     </nav>
 
   </div>
-
-  <section class="section" id="carousel-section">
+  <section class="section" id="main-section">
     <canvas id="canvas" style="position: absolute; top: 0; left: 0; z-index: 1;"></canvas>
-    <div class="container">
-      <div id="carousel-demo" class="carousel pb-5" style="overflow: hidden">
-        <div class="item-1">
-          <div class="columns">
-            <div class="column pr-4 mr-4">
-              <h2 class="title is-1 has-text-white-ter">
-                <img src="images/title-logo-white.png">
-              </h2>
-              <p>
-                Panopticon AI is revolutionizing the art of war. Using machine learning,
-                we're creating an A.I. agent that no human can beat in simulated wargames.
-              </p>
-              <br />
+    <div class="container px-3-mobile">
+      <div class="columns">
+        <div class="column pr-4 mr-4">
+          <h2 class="title is-1 has-text-white-ter">
+            <img src="images/title-logo-white.png">
+          </h2>
+          <p>
+            Panopticon AI is revolutionizing the art of war. Using machine learning,
+            we're creating an A.I. agent that no human can beat in simulated wargames.
+          </p>
+          <br />
 
-              <div class="buttons is-left">
-                <a href="#contact">
-                  <button class="button is-medium is-red is-primary is-light">Follow us</button>
-                </a>
-              </div>
-            </div>
-            <div class="column is-half is-pulled-right">
-              <figure class="image is-covered">
-                <a
-                  href="https://www.armyupress.army.mil/portals/7/military-review/img/English/ND-20/Ferguson-Human-Machine-Paradox-img1.jpg">
-                  <img src="images/Marines-Cover2.jpg" alt="" class="img-with-border" />
-                </a>
-              </figure>
-            </div>
+          <div class="buttons is-left">
+            <a href="#contact">
+              <button class="button is-medium is-red is-primary is-light">Follow us</button>
+            </a>
           </div>
         </div>
+        <div class="column is-half is-pulled-right">
+          <figure class="image is-covered">
+            <a
+              href="https://www.armyupress.army.mil/portals/7/military-review/img/English/ND-20/Ferguson-Human-Machine-Paradox-img1.jpg">
+              <img src="images/Marines-Cover2.jpg" alt="" class="img-with-border marines-img" />
+            </a>
+          </figure>
+        </div>
       </div>
-      <!-- End Carousel -->
     </div>
   </section>
 
   <section class="section">
     <div class="container" id="applications-section">
-      <div class="columns is-centered " id="applications-text-container">
+      <div class="has-text-centered pb-1">
         <h1 class="title is-1">Applications</h1>
       </div>
       <div class="columns">
@@ -208,35 +202,43 @@
       </div>
   </section>
 
-  <section class="section  is-centered" id="contact">
+  <section class="section  is-centered" id="contact-section">
     <div class="container">
       <div class="columns is-centered">
-        <div class="column is-4">
+        <div class="column is-5">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdwV0g4eFeFOZeTsmEwjppwnWiRTJaDpmaH7-ZyWbUkuu5F8g/viewform?embedded=true"
-            width="640" height="610" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            width="100%" height="625" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           <br>
 
         </div>
-        <div class="column is-2"> </div>
+        <div class="column is-1"> </div>
         <div class="column is-4">
 
           <hr style="border: 0; border-top: 1px solid #1f1f2e; height: 0;">
           <h4 class="title">Follow Us</h4>
 
           <div class="buttons">
-            <a class="button is-medium is-linkedin is-inverted is-black-social">
-              <span class="icon">
-                <i class="fab fa-linkedin fa-lg"></i>
-              </span>
-            </a>
-            <a class="button is-medium is-instagram is-inverted is-black-social">
-              <span class="icon">
-                <i class="fab fa-instagram fa-lg"></i>
-              </span>
-            </a>
+            <div>
+              <a href="https://www.linkedin.com/in/luke-chen-77b48b62/"
+                class="button is-medium is-linkedin is-inverted is-black-social">
+                <i class="fab fa-linkedin fa-lg"> </i>
+                <br>
+              </a>
+            </div>
+            <p>
+              Luke
+            </p>
+            <div>
+              <a href="https://www.linkedin.com/in/minh-hua-47a105150/"
+                class="button is-medium is-linkedin is-inverted is-black-social">
+                <i class="fab fa-linkedin fa-lg"> </i>
+              </a>
+            </div>
+            <p>
+              Minh
+            </p>
           </div>
-
         </div>
       </div>
     </div>
@@ -267,5 +269,7 @@
     slidesToShow: 1,
   });
 </script>
+
+
 
 <script src="script.js"></script>
