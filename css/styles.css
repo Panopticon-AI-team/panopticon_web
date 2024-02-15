@@ -42,7 +42,9 @@ p {
   padding-right: 3rem;
 }
 
-@media screen and (min-width: 769px) {  /* This corresponds to Bulma's tablet breakpoint */
+@media screen and (min-width: 769px) {
+
+  /* This corresponds to Bulma's tablet breakpoint */
   .px-3-mobile {
     padding-left: 0;
     padding-right: 0;
@@ -83,7 +85,8 @@ p {
 }
 
 .card-img {
-  padding: 20px; /* Adjust as needed */
+  padding: 20px;
+  /* Adjust as needed */
 }
 
 .card:hover {
@@ -136,15 +139,18 @@ p {
   scroll-margin-top: 40px;
 }
 
-#applications-section, #technical-section {
+#applications-section,
+#technical-section {
   scroll-margin-top: 80px;
 }
 
 .scroll-offset::before {
   display: block;
   content: " ";
-  height: 60px; /* height of your navbar */
-  margin: -60px 0 0; /* negative value of your navbar height */
+  height: 60px;
+  /* height of your navbar */
+  margin: -60px 0 0;
+  /* negative value of your navbar height */
   visibility: hidden;
   pointer-events: none;
 }
@@ -186,6 +192,15 @@ p {
 .is-black-social:hover {
   background-color: white !important;
   color: #fc5d35 !important;
+}
+
+ul {
+  list-style-type: disc;
+  /* Default bullet points */
+  list-style-position: inside;
+  /* Adjust as needed: 'inside' or 'outside' */
+  padding-left: 1em;
+  /* Add padding to align bullets properly */
 }
 
 html {
