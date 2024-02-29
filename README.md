@@ -13,4 +13,5 @@ Bulma-Social - [github.com/aldi/bulma-social](https://github.com/aldi/bulma-soci
 
 ## Licence
 
+
 Code released under [the MIT license](https://github.com/restylianos/bulma-tropico-template/blob/main/LICENSE).
