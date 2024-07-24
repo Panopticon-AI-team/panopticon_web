@@ -1,76 +1,58 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const lines = [];
-const numLines = 100;
+const numLines = 60;
 
 canvas.width = canvas.parentElement.offsetWidth;
 canvas.height = canvas.parentElement.offsetHeight;
 
 class Line {
     constructor() {
-        this.reset();
-    }
-
-    reset() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.length = 300 + Math.random() * 300;
+        this.length = 300;
         this.angle = Math.random() * Math.PI * 2;
-        this.rotationSpeed = (Math.random() < 0.5 ? -1 : 1) * (0.0002 + Math.random() * 0.0006);
-        this.speed = 0.02 + Math.random() * 0.06;
-        this.opacity = 0;
-        this.fadeSpeed = 0.002 + Math.random() * 0.004;
-        this.thickness = 0.5 + Math.random() * 1.5;
+        this.rotationSpeed = (Math.random() < 0.1 ? -1 : 1) * 0.002; // constant rotation speed
+        this.speed = 0.2;
+        this.opacity = 0; // Start with an opacity of 0
+        this.fadeSpeed = 0.01; // Adjust this value to make the fade faster or slower
+
     }
 
     update() {
         this.angle += this.rotationSpeed;
+
+        // Move line based on angle
         this.x += Math.cos(this.angle) * this.speed;
         this.y += Math.sin(this.angle) * this.speed;
 
+        // Update opacity for fade-in effect
         if (this.opacity < 1) {
             this.opacity += this.fadeSpeed;
         }
 
-        if (this.x > canvas.width + this.length || this.x < -this.length ||
-            this.y > canvas.height + this.length || this.y < -this.length) {
-            this.reset();
+        // Reset line if out of canvas bounds
+        if (this.x > canvas.width + this.length || this.x < -this.length || this.y > canvas.height + this.length || this.y < -this.length) {
+            Object.assign(this, new Line());
         }
     }
 
     draw() {
-        const gradient = ctx.createLinearGradient(
-            this.x, this.y,
-            this.x + Math.cos(this.angle) * this.length,
-            this.y + Math.sin(this.angle) * this.length
-        );
-
-        const color = `rgba(41, 65, 105, ${this.opacity * 0.5})`; // Dark navy color
-
-        gradient.addColorStop(0, 'rgba(10, 14, 31, 0)'); // Fully transparent at the start
-        gradient.addColorStop(0.3, color); // Fade in
-        gradient.addColorStop(0.7, color); // Fade out
-        gradient.addColorStop(1, 'rgba(10, 14, 31, 0)'); // Fully transparent at the end
-
         ctx.beginPath();
         ctx.moveTo(this.x, this.y);
-        ctx.lineTo(this.x + Math.cos(this.angle) * this.length,
-            this.y + Math.sin(this.angle) * this.length);
-        ctx.strokeStyle = gradient;
-        ctx.lineWidth = this.thickness;
+        ctx.lineTo(this.x + Math.cos(this.angle) * this.length, this.y + Math.sin(this.angle) * this.length);
+        ctx.strokeStyle = `rgba(65, 75, 105, ${this.opacity * .72})`; // Use the opacity value
+        ctx.lineWidth = 1;
         ctx.stroke();
     }
 }
 
-
-// Initialize lines
 for (let i = 0; i < numLines; i++) {
     lines.push(new Line());
 }
 
 function animate() {
-    ctx.fillStyle = 'rgba(10, 14, 31, 0.1)'; // More transparent for more intense tracers
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     for (const line of lines) {
         line.update();
@@ -80,15 +62,34 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-// Start the animation
+let lineCreationInterval = 500; // 100ms interval to create a new line
+let currentLinesCount = 0;
+
+// Function to add a line to the array
+function addLine() {
+    if (currentLinesCount < numLines) {
+        lines.push(new Line());
+        currentLinesCount++;
+    } else {
+        clearInterval(lineCreationTimer); // Stop the interval when we reach the desired number of lines
+    }
+}
+
+let lineCreationTimer = setInterval(addLine, lineCreationInterval);
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (const line of lines) {
+        line.update();
+        line.draw();
+    }
+
+    requestAnimationFrame(animate);
+}
+
 animate();
 
-
-// Resize canvas when window is resized
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
 
 
 
