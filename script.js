@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const lines = [];
-const numLines = 100;
+const numLines = 110;
 
 canvas.width = canvas.parentElement.offsetWidth;
 canvas.height = canvas.parentElement.offsetHeight;
@@ -14,7 +14,7 @@ class Line {
     reset() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.length = 300 + Math.random() * 300;
+        this.length = 350 + Math.random() * 300;
         this.angle = Math.random() * Math.PI * 2;
         this.rotationSpeed = (Math.random() < 0.5 ? -1 : 1) * (0.0002 + Math.random() * 0.0006);
         this.speed = 0.02 + Math.random() * 0.06;
@@ -45,7 +45,7 @@ class Line {
             this.y + Math.sin(this.angle) * this.length
         );
 
-        const color = `rgba(41, 65, 105, ${this.opacity * 0.35})`; // Dark navy color
+        const color = `rgba(30, 50, 90, ${this.opacity * 0.35})`; // Dark navy color
 
         gradient.addColorStop(0, 'rgba(10, 14, 31, 0)'); // Fully transparent at the start
         gradient.addColorStop(0.3, color); // Fade in
@@ -69,7 +69,7 @@ for (let i = 0; i < numLines; i++) {
 }
 
 function animate() {
-    ctx.fillStyle = 'rgba(10, 14, 31, 0.1)'; // More transparent for more intense tracers
+    ctx.fillStyle = 'rgba(10, 14, 31, 0.2)'; // More transparent for more intense tracers
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     for (const line of lines) {
