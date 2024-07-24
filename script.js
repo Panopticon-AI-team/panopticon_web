@@ -45,7 +45,7 @@ class Line {
             this.y + Math.sin(this.angle) * this.length
         );
 
-        const color = `rgba(41, 65, 105, ${this.opacity * 0.5})`; // Dark navy color
+        const color = `rgba(41, 65, 105, ${this.opacity * 0.35})`; // Dark navy color
 
         gradient.addColorStop(0, 'rgba(10, 14, 31, 0)'); // Fully transparent at the start
         gradient.addColorStop(0.3, color); // Fade in
