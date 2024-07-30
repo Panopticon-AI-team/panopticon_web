@@ -39,6 +39,12 @@ p {
   z-index: 3;
 }
 
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .px-3-mobile {
   padding-left: 3rem;
   padding-right: 3rem;
