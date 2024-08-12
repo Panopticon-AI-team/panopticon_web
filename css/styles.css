@@ -173,6 +173,8 @@ video {
   margin-top: 20px;
 }
 
+
+
 .buttons {
   font-family: "IBM Plex Sans";
 
@@ -206,6 +208,14 @@ video {
 .button.is-linkedin.is-inverted.is-transparent {
   background-color: transparent;
 }
+
+
+#blog-section,
+#blog-post-section {
+  padding-top: 80px;
+  /* Adjust this value to ensure content is below the navbar */
+}
+
 
 ul {
   list-style-type: disc;
