@@ -73,10 +73,7 @@ video {
   padding: 2rem
 }
 
-.footer-secondary {
-  color: white;
-  background-color: #1f1f2e;
-}
+
 
 .equal-height-card {
   display: flex;
@@ -163,17 +160,12 @@ video {
   pointer-events: none;
 }
 
-.footer-main {
-  background-color: white !important;
-  padding: 0 !important;
-}
-
-.footer-secondary {
+.footer-primary {
+  color: white;
+  background-color: #1f1f2e;
   padding: 20px;
   margin-top: 20px;
 }
-
-
 
 .buttons {
   font-family: "IBM Plex Sans";
@@ -209,13 +201,27 @@ video {
   background-color: transparent;
 }
 
-
 #blog-section,
 #blog-post-section {
+  flex: 1 0 auto;
   padding-top: 80px;
   /* Adjust this value to ensure content is below the navbar */
 }
 
+.blog-index {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h2.title.is-3.blog-index-headline a {
+  /* Your styles here */
+  color: #080e1e;
+}
+
+p.blog-date {
+  color: #3273dd;
+}
 
 ul {
   list-style-type: disc;

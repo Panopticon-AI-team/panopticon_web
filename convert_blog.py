@@ -19,8 +19,8 @@ def generate_blog_posts_html(posts):
     for post in posts:
         blog_posts_html += f"""
         <div class="box mb-5">
-            <h2 class="title is-3"><a href="blog/{post['slug']}.html">{post['title']}</a></h2>
-            <p class="subtitle is-6">{post['date']}</p>
+            <h2 class="title is-3 blog-index-headline"><a href="blog/{post['slug']}.html">{post['title']}</a></h2>
+            <p class="subtitle is-6 blog-date">{post['date']}</p>
             <p class="mb-4">{post['excerpt']}</p>
             <a href="blog/{post['slug']}.html" class="button is-primary is-red">Read More</a>
         </div>

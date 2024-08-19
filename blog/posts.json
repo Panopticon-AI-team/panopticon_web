@@ -1,14 +1,20 @@
 [
     {
-        "title": "Major US Military Modeling and Simulation Software",
-        "date": "2024-08-24",
-        "slug": "modeling-sim-software",
-        "excerpt": "An overview of popular military modeling and simulation software"
+        "title": "What is Modeing and Simulation (M&S)?",
+        "date": "2024-08-18",
+        "slug": "what-is-modeling-and-simulation",
+        "excerpt": "Modeling and Simulation (M&S) is a critical capability within the Department of Defense (DoD), serving as a cornerstone for military readiness, acquisition processes, and operational planning. "
     },
     {
-        "title": "Another Interesting Article",
-        "date": "2024-08-12",
-        "slug": "interesting-article",
-        "excerpt": "A short preview of another fascinating blog post..."
+        "title": "Why the Air Force Relies on Modeling and Simulation",
+        "date": "2024-08-18",
+        "slug": "why-air-force-ms",
+        "excerpt": "The United States Air Force heavily relies on Modeling and Simulation (M&S) for a variety of critical applications."
+    },
+    {
+        "title": "Major US Military Modeling and Simulation Software",
+        "date": "2024-08-11",
+        "slug": "modeling-sim-software",
+        "excerpt": "An overview of popular military modeling and simulation software"
     }
 ]
