@@ -89,6 +89,11 @@ video {
   padding-top: 0;
 }
 
+.content.is-narrow {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .card-img {
   padding: 20px;
   /* Adjust as needed */
