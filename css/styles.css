@@ -219,6 +219,17 @@ video {
   min-height: 100vh;
 }
 
+.contributors-page {
+  min-height: 100vh;
+  padding-bottom: 40px;
+  /* Add padding to ensure content doesn't hit the footer */
+}
+
+#contributors-section {
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+
 h2.title.is-3.blog-index-headline a {
   /* Your styles here */
   color: #080e1e;
