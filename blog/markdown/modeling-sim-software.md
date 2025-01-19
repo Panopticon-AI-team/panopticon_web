@@ -30,7 +30,7 @@ OneSAF, a comprehensive M&S environment developed by the US Army, supports both 
 While the US Army owns and primarily uses OneSAF, other military branches and some allied nations have also adopted it. It sees extensive use in Army research facilities and training centers.
 Researchers often employ OneSAF for analyzing tactical operations and battlefield dynamics, testing new doctrines and operational concepts, and evaluating the impact of new technologies on battlefield outcomes. From a technical perspective, OneSAF is built on a service-oriented architecture, supports integration with live, virtual, and constructive simulations, and includes a robust scenario development toolkit.
 
-![OneSAF](https://www.researchgate.net/publication/228616503/figure/fig1/AS:301998080577539@1449013361443/OneSAFnet-top-level.png)
+![OneSAF](https://asc.army.mil/web/wp-content/uploads/2018/06/framework-figure-4.png)
 
 ## STORM (Synthetic Theater Operations Research Model)
 STORM is a campaign-level analytical model used by the US Air Force for capability analysis and resource allocation studies. It focuses on theater-level air and space operations, incorporates stochastic modeling for more realistic outcomes, and supports analysis of long-term campaigns and force structure decisions.
