@@ -172,6 +172,10 @@ video {
   margin-top: 20px;
 }
 
+.footer-primary a {
+  color: white;
+}
+
 .buttons {
   font-family: "IBM Plex Sans";
 
